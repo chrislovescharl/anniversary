@@ -1,5 +1,6 @@
 import '../App.css';
 import ChrisLovesCharl from "./ChrisLovesCharl.js"
+import smoothscroll from 'smoothscroll-polyfill';
 
 import { React, Component } from 'react'
 import { fadeIn } from 'react-animations';
@@ -7,7 +8,7 @@ import styled, { keyframes } from "styled-components";
 
 const FadeInAnimation = keyframes`${fadeIn}`;
 const FadeInButton = styled.button`
-  animation: 7s 0.1s ${FadeInAnimation};
+  animation: 500ms 2s ${FadeInAnimation};
   animation-fill-mode: forwards;
 `;
 
@@ -22,12 +23,19 @@ export default class FirstSection extends Component {
 
     render() {
         return(
-            <div className="App">
+            <div className="sections">
                 <div>
                     <ChrisLovesCharl slideIn={this.state.slideIn} />
                     <FadeInButton className="contButton" onClick={() => {
                             this.setState({ slideIn: false })
-                            this.props.nextSection.current.scrollIntoView()
+
+                            const nextSection = this.props.nextSection.current.getBoundingClientRect().top + window.scrollY
+                            
+                            smoothscroll.polyfill();
+                            window.scroll({
+                                top: nextSection,
+                                behavior: "smooth"
+                            })
                         }} >
                         Start Adventure
                     </FadeInButton>

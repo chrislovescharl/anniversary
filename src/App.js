@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useRef, useEffect } from "react";
 import FirstSection from "./components/FirstSection.js"
+import SecondSection from "./components/SecondSection.js"
 
 function App() {
   const secondSectionRef = useRef(null)
@@ -13,7 +14,7 @@ function App() {
         <FirstSection nextSection={secondSectionRef} />
       </div>
       <div ref={secondSectionRef}>
-        <FirstSection />
+        <SecondSection />
       </div>
     </div>
   );
