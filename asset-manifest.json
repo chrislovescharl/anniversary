@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/anniversary/static/css/main.dd395118.chunk.css",
-    "main.js": "/anniversary/static/js/main.31863e5e.chunk.js",
-    "main.js.map": "/anniversary/static/js/main.31863e5e.chunk.js.map",
+    "main.css": "/anniversary/static/css/main.aeb6e659.chunk.css",
+    "main.js": "/anniversary/static/js/main.33a042b3.chunk.js",
+    "main.js.map": "/anniversary/static/js/main.33a042b3.chunk.js.map",
     "runtime-main.js": "/anniversary/static/js/runtime-main.ef246ace.js",
     "runtime-main.js.map": "/anniversary/static/js/runtime-main.ef246ace.js.map",
-    "static/js/2.83d9d420.chunk.js": "/anniversary/static/js/2.83d9d420.chunk.js",
-    "static/js/2.83d9d420.chunk.js.map": "/anniversary/static/js/2.83d9d420.chunk.js.map",
+    "static/js/2.64ddf5e0.chunk.js": "/anniversary/static/js/2.64ddf5e0.chunk.js",
+    "static/js/2.64ddf5e0.chunk.js.map": "/anniversary/static/js/2.64ddf5e0.chunk.js.map",
     "static/js/3.979d378e.chunk.js": "/anniversary/static/js/3.979d378e.chunk.js",
     "static/js/3.979d378e.chunk.js.map": "/anniversary/static/js/3.979d378e.chunk.js.map",
     "index.html": "/anniversary/index.html",
-    "static/css/main.dd395118.chunk.css.map": "/anniversary/static/css/main.dd395118.chunk.css.map",
-    "static/js/2.83d9d420.chunk.js.LICENSE.txt": "/anniversary/static/js/2.83d9d420.chunk.js.LICENSE.txt"
+    "static/css/main.aeb6e659.chunk.css.map": "/anniversary/static/css/main.aeb6e659.chunk.css.map",
+    "static/js/2.64ddf5e0.chunk.js.LICENSE.txt": "/anniversary/static/js/2.64ddf5e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ef246ace.js",
-    "static/js/2.83d9d420.chunk.js",
-    "static/css/main.dd395118.chunk.css",
-    "static/js/main.31863e5e.chunk.js"
+    "static/js/2.64ddf5e0.chunk.js",
+    "static/css/main.aeb6e659.chunk.css",
+    "static/js/main.33a042b3.chunk.js"
   ]
 }
