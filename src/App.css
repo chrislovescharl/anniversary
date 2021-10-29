@@ -1,3 +1,7 @@
+html {
+  background-color: #C074B7;
+}
+
 .sections {
   text-align: center;
   background-color: #C074B7;
@@ -61,6 +65,9 @@
   border-bottom: 2px solid white;
 }
 
+.images {
+  max-width: 90%
+}
 
 
 .App-logo {

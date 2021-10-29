@@ -1,4 +1,5 @@
 import { React, Component } from 'react'
+import smoothscroll from 'smoothscroll-polyfill';
 import { pulse } from 'react-animations';
 import styled, { keyframes } from "styled-components";
 
@@ -18,7 +19,17 @@ export default class SecondSection extends Component {
                         <p className="paraTextTime">{timeFrom}</p>
                         <p className="paraText">I think that's pretty damn cool.</p>
                     </div>
-                    <PulseButton className="contButtonTwo">Keep Going</PulseButton>
+                    <PulseButton className="contButtonTwo" onClick={() => {
+                        const nextSection = this.props.nextSection.current.getBoundingClientRect().top + window.scrollY
+                        
+                        smoothscroll.polyfill();
+                        window.scroll({
+                            top: nextSection,
+                            behavior: "smooth"
+                        })
+                    }} >
+                        Keep Going
+                    </PulseButton>
                 </div>
             </div>
         )
