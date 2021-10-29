@@ -22,7 +22,7 @@ function App() {
         <ThirdSection nextSection={fourthSectionRef}/>
       </div>
       <div ref={fourthSectionRef}>
-        <FourthSection />
+        <FourthSection nextSection={fourthSectionRef}/>
       </div>
     </div>
   );

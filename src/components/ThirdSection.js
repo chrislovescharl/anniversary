@@ -67,15 +67,18 @@ export default class ThirdSection extends Component {
 
         const appropriateButton = (this.state.showImages) 
                 ? null
-                : <button 
-                    style={{opacity: 1}}
-                    className="contButton" 
-                    onClick={() => {
-                        this.setState({ showImages: true })
-                    }} 
-                >
-                    See Memories
-                </button>
+                : <div>
+                    <p className="paraText">We've made so many memories in that time</p>
+                    <button 
+                        style={{opacity: 1}}
+                        className="contButton" 
+                        onClick={() => {
+                            this.setState({ showImages: true })
+                        }} 
+                    >
+                        See Memories
+                    </button>
+                </div>
 
         return(
             <div className="sections">

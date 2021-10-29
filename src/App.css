@@ -21,6 +21,15 @@ html {
   margin: 0;
 }
 
+.mediumFont {
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
 .contButton {
   opacity: 0;
   background: none;
